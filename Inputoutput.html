@@ -1,0 +1,36 @@
+<html>
+  <head> DO YOU WANT TO BE MOTIVATED
+    <script>
+       function getName()
+       {
+           var name = document.getElementById("nameBox").value;
+           var message = name + ", grind for your goals!";
+           document.getElementById("greeting").innerHTML = message;
+       }
+       
+    </script>
+
+    <style>
+       body{
+            background-color: red;
+           }
+       #greeting{
+                  font-family: monospace;
+                  color:  blue;
+                  font-size: 35px;
+              }
+           hr{
+               border: 4px dashed aquamarine;
+             }
+           </style>
+         </head>
+
+         <body>
+             <h3>Type Your Name:</h3>
+             <input id = "nameBox" type = "text">
+             <input type = "button" value = "OK"  onclick = "getName()">
+             <br><hr>
+             <!--The span tag is used for output, its a tag that can be modified-->
+             <span id = "greeting"></span>
+         </body>
+       </html>
